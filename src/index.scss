@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  height: 100%;
+}
+
+.buttonBook {
+  padding: 15px 45px;
+  font-size: 18px;
+  outline: 0;
+  border: 0;
+  color: white;
+  font-weight: 300;
+  background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%);
+  background-blend-mode: darken;
+  border-radius: 8px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  .lineMenu {
+    box-sizing: border-box;
+    padding: 30px 21px;
+    width: 64px;
+    background: #151B1F;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .lineMenuLanguage {
+      font-size: 13px;
+      color: #0EC261;
+
+    }
+  }
+
+  .mainPartFooter {
+    display: flex;
+  }
+
+  .mainPart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 64px;
+
+    .mainPartUp {
+      display: flex;
+      justify-content: space-between;
+
+      .mainPartUpTitle {
+        font-size: 30px;
+        font-weight: 300;
+        color: #0EC261
+      }
+
+      .mainPartUpLocation {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 7px;
+        }
+      }
+    }
+
+    .mainPartMiddle {
+
+      .mainPartMiddleTitle {
+        font-size: 70px;
+        font-weight: 700;
+      }
+
+      .mainPartMiddleSubtitle {
+        font-size: 70px;
+        font-weight: 700;
+        color: #0EC261
+      }
+
+      .mainPartMiddleSubtitle2 {
+        font-size: 27px;
+        font-weight: 300;
+        color: #999;
+        margin-top: 34px;
+        margin-bottom: 60px;
+      }
+    }
+
+    .mainPartFooter {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      font-weight: 300;
+      color: #999;
+
+      .mainPartPhone {
+        color: #000;
+      }
+    }
+  }
+
+  .sliderPart
+  {
+    .slider {
+      position: relative;
+      height: 100vh;
+      width: 688px;
+      margin: 0 auto;
+      overflow: hidden;
+
+      .slide {
+        height: 100%;
+        width: 688px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .arrowLine {
+        position: absolute;
+        width: 64px;
+        height: 100%;
+        top: 0;
+        background: #0EC261;
+        opacity: 0;
+
+        &:hover {
+         opacity: 0.3;
+        }
+      }
+
+
+      .arrow {
+        z-index: 999;
+        display: flex;
+        position: absolute;
+        top: 50%;
+        height: 50px;
+        width: 50px;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        align-items: center;
+        transition: transform ease-in 0.1s;
+        &:hover.arrowLine {
+          transform: scale(1.1);
+          .arrowLine {
+            opacity: 0.3;
+          }
+        }
+        img {
+
+          &:focus {
+            outline: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

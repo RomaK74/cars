@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "https://romak74.github.io/cars/build/static/css/main.073eeb6c.chunk.css",
+    "main.js": "https://romak74.github.io/cars/build/static/js/main.847dbce0.chunk.js",
+    "main.js.map": "https://romak74.github.io/cars/build/static/js/main.847dbce0.chunk.js.map",
+    "runtime-main.js": "https://romak74.github.io/cars/build/static/js/runtime-main.0646d9ee.js",
+    "runtime-main.js.map": "https://romak74.github.io/cars/build/static/js/runtime-main.0646d9ee.js.map",
+    "static/js/2.d22dee86.chunk.js": "https://romak74.github.io/cars/build/static/js/2.d22dee86.chunk.js",
+    "static/js/2.d22dee86.chunk.js.map": "https://romak74.github.io/cars/build/static/js/2.d22dee86.chunk.js.map",
+    "static/js/3.86789163.chunk.js": "https://romak74.github.io/cars/build/static/js/3.86789163.chunk.js",
+    "static/js/3.86789163.chunk.js.map": "https://romak74.github.io/cars/build/static/js/3.86789163.chunk.js.map",
+    "index.html": "https://romak74.github.io/cars/build/index.html",
+    "static/css/main.073eeb6c.chunk.css.map": "https://romak74.github.io/cars/build/static/css/main.073eeb6c.chunk.css.map",
+    "static/js/2.d22dee86.chunk.js.LICENSE.txt": "https://romak74.github.io/cars/build/static/js/2.d22dee86.chunk.js.LICENSE.txt",
+    "static/media/left-arrow.dd0226d1.svg": "https://romak74.github.io/cars/build/static/media/left-arrow.dd0226d1.svg",
+    "static/media/logo.6ce24c58.svg": "https://romak74.github.io/cars/build/static/media/logo.6ce24c58.svg",
+    "static/media/right-arrow.9d87137d.svg": "https://romak74.github.io/cars/build/static/media/right-arrow.9d87137d.svg",
+    "static/media/slide-1.9369f2aa.png": "https://romak74.github.io/cars/build/static/media/slide-1.9369f2aa.png",
+    "static/media/slide-2.ea68d8b3.png": "https://romak74.github.io/cars/build/static/media/slide-2.ea68d8b3.png",
+    "static/media/slide-3.4e22dc96.png": "https://romak74.github.io/cars/build/static/media/slide-3.4e22dc96.png",
+    "static/media/slide-4.be695f13.png": "https://romak74.github.io/cars/build/static/media/slide-4.be695f13.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0646d9ee.js",
+    "static/js/2.d22dee86.chunk.js",
+    "static/css/main.073eeb6c.chunk.css",
+    "static/js/main.847dbce0.chunk.js"
+  ]
+}
