@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import SliderContent from "./SliderContent";
 import Slide from "./Slide";
 import Arrow from "./Arrow";
+import Dots from "./Dots";
 
 const Slider = props => {
+    console.log(props);
     const getWidth = () => window.innerWidth;
 
     const [state, setState] = useState({
@@ -12,10 +14,10 @@ const Slider = props => {
         transition: 0.45
     });
 
-    const { translate, transition, activeIndex } = state;
+    const {translate, transition, activeIndex} = state;
 
     const nextSlide = () => {
-        if (activeIndex === props.slides.length - 1) {
+        if (activeIndex === props.content.length - 1) {
             return setState({
                 ...state,
                 translate: 0,
@@ -34,8 +36,8 @@ const Slider = props => {
         if (activeIndex === 0) {
             return setState({
                 ...state,
-                translate: (props.slides.length - 1) * 688,
-                activeIndex: props.slides.length - 1
+                translate: (props.content.length - 1) * 688,
+                activeIndex: props.content.length - 1
             })
         }
 
@@ -48,17 +50,20 @@ const Slider = props => {
 
     return (
         <div className="slider">{/*  */}
+            <div className="sliderFone"></div>
             <SliderContent
                 translate={translate}
                 transition={transition}
-                width={getWidth() * props.slides.length}
+                width={getWidth() * props.content.length}
             >
-                {props.slides.map((slide, i) => (
-                    <Slide key={slide + i} content={slide} />
+                {props.content.map(val => (
+                    <Slide key={val.slide} content={val.slide} title={val.title} subtitle={val.subtitle}/>
                 ))}
             </SliderContent>
-            <Arrow direction="left" handleClick={prevSlide} />
-            <Arrow direction="right" handleClick={nextSlide} />
+            <Arrow direction="left" handleClick={prevSlide}/>
+            <Arrow direction="right" handleClick={nextSlide}/>
+            <Dots slides={props.content} activeIndex={activeIndex}/>
+
         </div>)
 }
 

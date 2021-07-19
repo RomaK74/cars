@@ -6,6 +6,41 @@
 
 .App {
   height: 100%;
+
+  .menuBackground {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #111518;
+    font-size: 32px;
+
+    .menuIn {
+      padding: 307px 128px;
+      color: white;
+
+
+      .menuInItem {
+        margin-bottom: 15px;
+        cursor: pointer;
+      }
+
+      .menuInItem:hover {
+        color: #0EC261;
+      }
+
+      .socialNetworks {
+        margin-top: 38px;
+        display: flex;
+        justify-content: space-between;
+        width: 144px;
+
+        .socialNetworksItem:hover {
+          color: #0EC261;
+        }
+      }
+    }
+  }
 }
 
 .buttonBook {
@@ -18,11 +53,13 @@
   background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%);
   background-blend-mode: darken;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
+
 
   .lineMenu {
     box-sizing: border-box;
@@ -33,6 +70,63 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    .burgerMenu {
+      z-index: 9999;
+      cursor: pointer;
+      width: 24px;
+      height: 36px;
+      position: relative;
+
+      .burgerMenuLine {
+        width: 100%;
+        height: 3px;
+        border-radius: 8px;
+        background: white;
+        position: absolute;
+        overflow: visible;
+        transition: 0.3s;
+      }
+
+      .burgerMenu__firstLine {
+        top: 0;
+        &.active {
+          transform: rotate(45deg);
+          transition: all 0.3s linear;
+          opacity: 0;
+
+        }
+      }
+
+      .burgerMenu__secondLine {
+        top: 8px;
+
+        &.active {
+          transform: rotate(45deg);
+
+
+        }
+      }
+
+      .burgerMenu__thirdLine {
+        top: 8px;
+
+        &.active {
+          transform: rotate(-45deg);
+        }
+      }
+
+      .burgerMenu__forthLine {
+        top: 16px;
+
+        &.active {
+          transform: rotate(45deg);
+          transition: all 0.3s linear;
+          opacity: 0;
+
+        }
+      }
+    }
 
     .lineMenuLanguage {
       font-size: 13px;
@@ -56,13 +150,13 @@
       display: flex;
       justify-content: space-between;
 
-      .mainPartUpTitle {
+      .mainPartUp__Title {
         font-size: 30px;
         font-weight: 300;
         color: #0EC261
       }
 
-      .mainPartUpLocation {
+      .mainPartUp__Location {
         display: flex;
         align-items: center;
 
@@ -74,18 +168,18 @@
 
     .mainPartMiddle {
 
-      .mainPartMiddleTitle {
+      .mainPartMiddle__Title {
         font-size: 70px;
         font-weight: 700;
       }
 
-      .mainPartMiddleSubtitle {
+      .mainPartMiddle__Subtitle {
         font-size: 70px;
         font-weight: 700;
         color: #0EC261
       }
 
-      .mainPartMiddleSubtitle2 {
+      .mainPartMiddle__Subtitle2 {
         font-size: 27px;
         font-weight: 300;
         color: #999;
@@ -103,12 +197,29 @@
 
       .mainPartPhone {
         color: #000;
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
       }
     }
   }
 
-  .sliderPart
-  {
+  .sliderPart {
+    .fone {
+
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 1000;
+      /* Menu background */
+
+      background: rgba(17, 21, 24, 0.81);
+
+
+    }
+
     .slider {
       position: relative;
       height: 100vh;
@@ -116,13 +227,80 @@
       margin: 0 auto;
       overflow: hidden;
 
+      .slider__dots {
+        position: absolute;
+        bottom: 25px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .dots__dot {
+          padding: 4px;
+          margin-right: 5px;
+          cursor: pointer;
+          border-radius: 50%;
+          background: white;
+        }
+      }
+
       .slide {
         height: 100%;
         width: 688px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        color: white;
+
+
+        .slide__title {
+          font-size: 40px;
+          margin-top: 295px;
+          margin-left: 96px;
+          margin-bottom: 15px;
+        }
+
+        .slide__subtitle {
+          margin-left: 96px;
+
+          max-width: 495px;
+          font-size: 24px;
+
+
+          font-style: normal;
+          font-weight: 300;
+          line-height: 90%;
+
+
+
+
+        }
+
+        .slide__button {
+          margin-left: 96px;
+          background: linear-gradient(90deg, #13493F 0%, #0C7B1B 100%);
+          border-radius: 4px;
+
+
+          margin-top: 32px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 21px;
+          display: flex;
+          align-items: center;
+          padding: 15px 37px;
+          text-align: center;
+          border: 0;
+          outline: 0;
+          cursor: pointer;
+          /* Gray_light */
+          color: #EEEEEE;
+
+
+        }
       }
+
 
       .arrowLine {
         position: absolute;
@@ -131,12 +309,22 @@
         top: 0;
         background: #0EC261;
         opacity: 0;
+        cursor: pointer;
+
 
         &:hover {
-         opacity: 0.3;
+          opacity: 0.3;
+
+          + .arrowLine {
+            opacity: 0.3;
+          }
         }
       }
 
+
+      .arrow:hover.arrowLine {
+        opacity: 0.3;
+      }
 
       .arrow {
         z-index: 999;
@@ -150,12 +338,17 @@
         cursor: pointer;
         align-items: center;
         transition: transform ease-in 0.1s;
-        &:hover.arrowLine {
+
+        &:hover {
           transform: scale(1.1);
-          .arrowLine {
-            opacity: 0.3;
-          }
+
         }
+
+        &:hover + .arrowLine {
+          opacity: 0.3;
+
+        }
+
         img {
 
           &:focus {

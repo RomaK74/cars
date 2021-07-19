@@ -9,14 +9,12 @@ const Arrow = ({direction, handleClick}) => {
     //  transform: translateX(${direction === 'left' ? '-2' : '2'}px);
 //${direction === 'right' ? `right: 25px` : `left: 25px`}
     return (
-        <div>
-            <div className="arrowLine"
-            style={direction === 'left' ? {left: '0'} : {right: '0'}}
-            />
+        <div className="containerArrow" onClick={handleClick}>
+
             <div className="arrow"
-                 onClick={handleClick}
-                 style={direction === 'right' ? {right: '25px', transform: 'translateX(2)'} : {
-                     left: '25px',
+
+                 style={direction === 'right' ? {right: '10px', transform: 'translateX(2)'} : {
+                     left: '10px',
                      transform: 'translateX(-2)'
                  }}
             >
@@ -24,6 +22,9 @@ const Arrow = ({direction, handleClick}) => {
                     <img src={rightArrow}
                          alt="right"/> : <img src={leftArrow} alt="left"/>}
             </div>
+            <div className="arrowLine"
+                 style={direction === 'left' ? {left: '0'} : {right: '0'}}
+            />
         </div>)
 }
 
