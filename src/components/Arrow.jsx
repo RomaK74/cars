@@ -8,15 +8,19 @@ const Arrow = ({direction, handleClick}) => {
     console.log('di', direction);
     //  transform: translateX(${direction === 'left' ? '-2' : '2'}px);
 //${direction === 'right' ? `right: 25px` : `left: 25px`}
+    const getWidth = () => window.innerWidth;
     return (
         <div className="containerArrow" onClick={handleClick}>
 
             <div className="arrow"
 
-                 style={direction === 'right' ? {right: '10px', transform: 'translateX(2)'} : {
+                 style={getWidth() <= 1285 ? ((direction === 'right' ? {right: '-10px', transform: 'translateX(2)'} : {
+                     left: '-10px',
+                     transform: 'translateX(-2)'
+                 })) : (direction === 'right' ? {right: '10px', transform: 'translateX(2)'} : {
                      left: '10px',
                      transform: 'translateX(-2)'
-                 }}
+                 })}
             >
                 {direction === 'right' ?
                     <img src={rightArrow}
