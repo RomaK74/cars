@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="397d0c83-ef68-4ea7-ab5a-615c0cce217c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Sass File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1vPijBrNCukGXCFJpYBC35DpEdw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="Sass" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="397d0c83-ef68-4ea7-ab5a-615c0cce217c" name="Default Changelist" comment="" />
+      <created>1626470257824</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626470257824</updated>
+      <workItem from="1626470260790" duration="205000" />
+      <workItem from="1626470474609" duration="7169000" />
+      <workItem from="1626542531937" duration="6921000" />
+      <workItem from="1626613470208" duration="20000" />
+      <workItem from="1626613879117" duration="4384000" />
+      <workItem from="1626641747791" duration="601000" />
+      <workItem from="1626687950196" duration="1603000" />
+      <workItem from="1626690872894" duration="5331000" />
+      <workItem from="1626709588726" duration="4965000" />
+      <workItem from="1626772420007" duration="9000" />
+      <workItem from="1626780343680" duration="21310000" />
+      <workItem from="1626873055035" duration="5412000" />
+      <workItem from="1626882645685" duration="15500000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="194" y="283" key="EditFileWatcherDialog" timestamp="1626803168074">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="194" y="283" key="EditFileWatcherDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1626803168074" />
+    <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1626882448312">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="620" y="260" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1626882448312" />
+    <state x="828" y="296" width="585" height="592" key="find.popup" timestamp="1626909801896">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="828" y="296" width="585" height="592" key="find.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1626909801896" />
+  </component>
+</project>
