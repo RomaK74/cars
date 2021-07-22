@@ -46,7 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dipl" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -79,6 +79,7 @@
       <workItem from="1626780343680" duration="21310000" />
       <workItem from="1626873055035" duration="5412000" />
       <workItem from="1626882645685" duration="15500000" />
+      <workItem from="1626948115562" duration="1956000" />
     </task>
     <servers />
   </component>
@@ -102,10 +103,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="194" y="283" key="EditFileWatcherDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1626803168074" />
-    <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1626882448312">
+    <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1626949288980">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="620" y="260" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1626882448312" />
+    <state x="620" y="260" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1626949288980" />
     <state x="828" y="296" width="585" height="592" key="find.popup" timestamp="1626909801896">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
