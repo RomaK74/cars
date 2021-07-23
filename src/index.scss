@@ -8,6 +8,50 @@
   }
 }
 
+.menu-background {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #111518;
+  font-size: 32px;
+
+  .menu-in {
+    padding: 307px 0 0 128px;
+    color: white;
+
+
+    .menu-in__item {
+      margin-bottom: 15px;
+      cursor: pointer;
+      a {
+        color: white;
+        &:hover {
+          color: #0EC261;
+        }
+      }
+    }
+
+    .social-networks {
+      margin-top: 38px;
+      display: flex;
+      justify-content: space-between;
+      width: 144px;
+
+      .social-networks__item {
+        svg {
+          cursor: pointer;
+          &:hover {
+            path {
+              fill: #0EC261;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .App {
   height: 100%;
 
@@ -111,6 +155,23 @@
       opacity: 0;
 
     }
+  }
+}
+
+.line-menu {
+  box-sizing: border-box;
+  padding: 30px 21px;
+  width: 64px;
+  background: #151B1F;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .line-menu__language {
+    font-size: 13px;
+    color: #0EC261;
+
   }
 }
 
