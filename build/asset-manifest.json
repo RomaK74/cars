@@ -1,22 +1,18 @@
 {
   "files": {
-    "main.css": "https://romak74.github.io/cars/build/static/css/main.cb4077a1.chunk.css",
-    "main.js": "https://romak74.github.io/cars/build/static/js/main.b627ceda.chunk.js",
-    "main.js.map": "https://romak74.github.io/cars/build/static/js/main.b627ceda.chunk.js.map",
-    "runtime-main.js": "https://romak74.github.io/cars/build/static/js/runtime-main.cc0f1c26.js",
-    "runtime-main.js.map": "https://romak74.github.io/cars/build/static/js/runtime-main.cc0f1c26.js.map",
-    "static/js/2.0e7f7f2b.chunk.js": "https://romak74.github.io/cars/build/static/js/2.0e7f7f2b.chunk.js",
-    "static/js/2.0e7f7f2b.chunk.js.map": "https://romak74.github.io/cars/build/static/js/2.0e7f7f2b.chunk.js.map",
-    "static/js/3.426a51b0.chunk.js": "https://romak74.github.io/cars/build/static/js/3.426a51b0.chunk.js",
-    "static/js/3.426a51b0.chunk.js.map": "https://romak74.github.io/cars/build/static/js/3.426a51b0.chunk.js.map",
+    "main.css": "https://romak74.github.io/cars/build/static/css/main.135dd3d8.chunk.css",
+    "main.js": "https://romak74.github.io/cars/build/static/js/main.a21b3fed.chunk.js",
+    "main.js.map": "https://romak74.github.io/cars/build/static/js/main.a21b3fed.chunk.js.map",
+    "runtime-main.js": "https://romak74.github.io/cars/build/static/js/runtime-main.6bfbd3ef.js",
+    "runtime-main.js.map": "https://romak74.github.io/cars/build/static/js/runtime-main.6bfbd3ef.js.map",
+    "static/js/2.6209ecf0.chunk.js": "https://romak74.github.io/cars/build/static/js/2.6209ecf0.chunk.js",
+    "static/js/2.6209ecf0.chunk.js.map": "https://romak74.github.io/cars/build/static/js/2.6209ecf0.chunk.js.map",
+    "static/js/3.42b669f2.chunk.js": "https://romak74.github.io/cars/build/static/js/3.42b669f2.chunk.js",
+    "static/js/3.42b669f2.chunk.js.map": "https://romak74.github.io/cars/build/static/js/3.42b669f2.chunk.js.map",
     "index.html": "https://romak74.github.io/cars/build/index.html",
-    "static/css/main.cb4077a1.chunk.css.map": "https://romak74.github.io/cars/build/static/css/main.cb4077a1.chunk.css.map",
-    "static/js/2.0e7f7f2b.chunk.js.LICENSE.txt": "https://romak74.github.io/cars/build/static/js/2.0e7f7f2b.chunk.js.LICENSE.txt",
-    "static/media/Facebook_white.c1876cc3.svg": "https://romak74.github.io/cars/build/static/media/Facebook_white.c1876cc3.svg",
-    "static/media/Instagram_white.98094ec4.svg": "https://romak74.github.io/cars/build/static/media/Instagram_white.98094ec4.svg",
-    "static/media/Telegram_white.e8137bbe.svg": "https://romak74.github.io/cars/build/static/media/Telegram_white.e8137bbe.svg",
+    "static/css/main.135dd3d8.chunk.css.map": "https://romak74.github.io/cars/build/static/css/main.135dd3d8.chunk.css.map",
+    "static/js/2.6209ecf0.chunk.js.LICENSE.txt": "https://romak74.github.io/cars/build/static/js/2.6209ecf0.chunk.js.LICENSE.txt",
     "static/media/left-arrow.1752ae91.svg": "https://romak74.github.io/cars/build/static/media/left-arrow.1752ae91.svg",
-    "static/media/logo.6ce24c58.svg": "https://romak74.github.io/cars/build/static/media/logo.6ce24c58.svg",
     "static/media/right-arrow.7591c327.svg": "https://romak74.github.io/cars/build/static/media/right-arrow.7591c327.svg",
     "static/media/slide-1.9369f2aa.png": "https://romak74.github.io/cars/build/static/media/slide-1.9369f2aa.png",
     "static/media/slide-2.ea68d8b3.png": "https://romak74.github.io/cars/build/static/media/slide-2.ea68d8b3.png",
@@ -24,9 +20,9 @@
     "static/media/slide-4.be695f13.png": "https://romak74.github.io/cars/build/static/media/slide-4.be695f13.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.cc0f1c26.js",
-    "static/js/2.0e7f7f2b.chunk.js",
-    "static/css/main.cb4077a1.chunk.css",
-    "static/js/main.b627ceda.chunk.js"
+    "static/js/runtime-main.6bfbd3ef.js",
+    "static/js/2.6209ecf0.chunk.js",
+    "static/css/main.135dd3d8.chunk.css",
+    "static/js/main.a21b3fed.chunk.js"
   ]
 }

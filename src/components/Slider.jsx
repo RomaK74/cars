@@ -3,6 +3,7 @@ import SliderContent from "./SliderContent";
 import Slide from "./Slide";
 import Arrow from "./Arrow";
 import Dots from "./Dots";
+import location from "../img/location.png";
 
 const Slider = props => {
     console.log(props);
@@ -19,7 +20,10 @@ const Slider = props => {
     };*/
     const slide = React.useRef();
     let width;
-    if (getWidth() <= 1200) {
+    if (getWidth() <= 1018) {
+        width = 370;
+    }
+    else if (getWidth() <= 1200) {
         width = 410;
     }
     else if (getWidth() <= 1285) {
@@ -29,8 +33,6 @@ const Slider = props => {
     } else if (getWidth() >= 1441) {
         width = 688;
     }
-
-
 
     const [state, setState] = useState({
         activeIndex: 0,
