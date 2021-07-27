@@ -1,10 +1,6 @@
 import React from 'react';
 
-const Slide = ({content, title, subtitle, but, getSlideWidth}) => {
-    console.log(content)
-    const slider = React.useRef();
-    let a = 1;
-
+const Slide = ({content, title, subtitle, but}) => {
     return (
         <div  className="slide"
              style={{background: `url(${content}) 100% 100% no-repeat`, backgroundSize: 'cover'}}>
