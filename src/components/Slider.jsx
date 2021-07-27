@@ -3,34 +3,22 @@ import SliderContent from "./SliderContent";
 import Slide from "./Slide";
 import Arrow from "./Arrow";
 import Dots from "./Dots";
-import location from "../img/location.png";
 
-const Slider = props => {
-    console.log(props);
-
-    const getWidth = () => window.innerWidth;
-    console.log('rrrrrrrrrrr', getWidth());
-    /*let width;
-    const getSlideWidth = width2 => {
-        console.log("Вызвалось!")
-        console.log('qqq', width2);
-        width = width2;
-        console.log('qqqq', width)
-        return width;
-    };*/
+const Slider = ({content}) => {
+    const widthScreen = window.screen.width;
     const slide = React.useRef();
     let width;
-    if (getWidth() <= 1018) {
+    if (widthScreen <= 1018) {
         width = 370;
     }
-    else if (getWidth() <= 1200) {
+    else if (widthScreen <= 1200) {
         width = 410;
     }
-    else if (getWidth() <= 1285) {
+    else if (widthScreen <= 1285) {
         width = 500;
-    } else if (getWidth() <= 1440) {
+    } else if (widthScreen <= 1440) {
         width = 600;
-    } else if (getWidth() >= 1441) {
+    } else if (widthScreen >= 1441) {
         width = 688;
     }
 
@@ -43,8 +31,7 @@ const Slider = props => {
     const {translate, transition, activeIndex} = state;
 
     const nextSlide = () => {
-        console.log('width in nS', width)
-        if (activeIndex === props.content.length - 1) {
+        if (activeIndex === content.length - 1) {
             return setState({
                 ...state,
                 translate: 0,
@@ -63,8 +50,8 @@ const Slider = props => {
         if (activeIndex === 0) {
             return setState({
                 ...state,
-                translate: (props.content.length - 1) * width,
-                activeIndex: props.content.length - 1
+                translate: (content.length - 1) * width,
+                activeIndex: content.length - 1
             })
         }
 
@@ -81,15 +68,15 @@ const Slider = props => {
             <SliderContent
                 translate={translate}
                 transition={transition}
-                width={getWidth() * props.content.length}
+                width={widthScreen * content.length}
             >
-                {props.content.map(val => (
+                {content.map(val => (
                     <Slide ref={slide} key={val.slide}  content={val.slide} title={val.title} subtitle={val.subtitle} but={val.button}/>
                 ))}
             </SliderContent>
             <Arrow direction="left" handleClick={prevSlide}/>
             <Arrow direction="right" handleClick={nextSlide}/>
-            <Dots slides={props.content} activeIndex={activeIndex}/>
+            <Dots slides={content} activeIndex={activeIndex}/>
 
         </div>)
 }

@@ -5,7 +5,7 @@ export const BurgerMenu = ({toggleBM}) => {
 
     const handleBM = () => {
         let burgerMenus = document.querySelectorAll('.burger-menu');
-        console.log(burgerMenus.length);
+
         if (!iconStatus) {
             setIconStatus(true);
             for (let i = 0; i < burgerMenus.length; i++) {
