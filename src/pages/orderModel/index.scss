@@ -1,0 +1,97 @@
+.order-model {
+
+  .radio-buttons {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+
+    input {
+      display: none;
+      margin-right: 4px;
+      &:not(:first-child) {
+        margin-left: 16px;
+      }
+      &:checked {
+        +label:before {
+          content: "";
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          position: absolute;
+          left: 0;
+          bottom: 1px;
+          border: 4px solid #0EC261;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    label {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      padding-left: 22px;
+      line-height: 18px;
+      user-select: none;
+      margin-right: 16px;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+        border: 1px solid gray;
+        border-radius: 50%;
+
+
+      }
+      &:hover {
+        &:before {
+          border-color: #0EC261;
+        }
+      }
+    }
+  }
+
+  .cars {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 736px;
+
+    .cars__item {
+      width: 368px;
+      box-sizing: border-box;
+      height: 224px;
+      border: 1px solid #eee;
+      padding: 16px;
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        border-color: black;
+      }
+
+      &:active {
+        border-color: #0EC261;
+      }
+
+      h5 {
+        font-size: 18px;
+      }
+
+      h6 {
+        font-size: 14px;
+        color: #999;
+      }
+
+      img {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+      }
+    }
+  }
+}
