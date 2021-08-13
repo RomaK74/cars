@@ -12,4 +12,4 @@ const Dots = ({slides, activeIndex}) => {
     </div>)
 }
 
-export default Dots
+export default Dots;

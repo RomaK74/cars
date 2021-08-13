@@ -8,18 +8,20 @@
     input {
       display: none;
       margin-right: 4px;
+
       &:not(:first-child) {
         margin-left: 16px;
       }
+
       &:checked {
-        +label:before {
+        + label:before {
           content: "";
           display: inline-block;
           width: 8px;
           height: 8px;
           position: absolute;
           left: 0;
-          bottom: 1px;
+          bottom: 2px;
           border: 4px solid #0EC261;
           border-radius: 50%;
         }
@@ -42,12 +44,11 @@
         height: 12px;
         position: absolute;
         left: 0;
-        bottom: 1px;
+        bottom: 3px;
         border: 1px solid gray;
         border-radius: 50%;
-
-
       }
+
       &:hover {
         &:before {
           border-color: #0EC261;

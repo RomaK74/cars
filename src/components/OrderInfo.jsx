@@ -1,17 +1,17 @@
 import React from 'react';
-import {Button} from "./Button";
 
-export const OrderInfo = () => {
+export const OrderInfo = ({city, point}) => {
     return (
         <div className="order-info">
             <h4>Ваш заказ:</h4>
             <div className="order-info__properties">
                 <ul>
-                    <li><span>Пункт выдачи</span>
-                        <div />
-                        <span className="order-info-from-user order-info-address">Ульяновск, Нариманова 42</span></li>
+                    {point && city && <li><span>Пункт выдачи</span>
+                        <div className="dots"/>
+                        <div className="order-info-from-user order-info-address__city">{city},</div>
+                        <span className="order-info-from-user order-info-address">{point}</span></li>}
                     <li><span>Модель</span>
-                        <div />
+                        <div className="dots"/>
                         <span className="order-info-from-user order-info-model">Hyndai, i30 N</span></li>
                 </ul>
             </div>
@@ -19,7 +19,7 @@ export const OrderInfo = () => {
                 <b>Цена:</b>
                 <span> от 10 000 до 32 000 ₽</span>
             </div>
-            <Button btnText="Дополнительно"/>
+            <button className="">Дополнительно</button>
         </div>
     )
 }

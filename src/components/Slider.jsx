@@ -1,27 +1,30 @@
 import React, {useState} from 'react'
-import SliderContent from "./SliderContent";
-import Slide from "./Slide";
-import Arrow from "./Arrow";
-import Dots from "./Dots";
+import SliderContent from './SliderContent';
+import Arrow from './Arrow';
+import Dots from './Dots';
 
 const Slider = ({content}) => {
-    const widthScreen = window.screen.width;
-    const slide = React.useRef();
+    let [widthScreen, setWidthScreen] = React.useState(window.screen.width);
+    React.useEffect(() => {
+        setWidthScreen(window.screen.width);
+    }, []);
     let width;
-    if (widthScreen <= 1018) {
-        width = 370;
+    switch (true) {
+        case widthScreen <= 1018:
+            width = 370;
+            break;
+        case widthScreen <= 1200:
+            width = 410;
+            break;
+        case widthScreen <= 1285:
+            width = 500;
+            break;
+        case widthScreen <= 1440:
+            width = 600;
+            break;
+        default:
+            width = 688;
     }
-    else if (widthScreen <= 1200) {
-        width = 410;
-    }
-    else if (widthScreen <= 1285) {
-        width = 500;
-    } else if (widthScreen <= 1440) {
-        width = 600;
-    } else if (widthScreen >= 1441) {
-        width = 688;
-    }
-
     const [state, setState] = useState({
         activeIndex: 0,
         translate: 0,
@@ -63,21 +66,17 @@ const Slider = ({content}) => {
     }
 
     return (
-        <div className="slider">{/*  */}
-            <div className="sliderFone"></div>
+        <div className="slider">
+            <div className="sliderFone"/>
             <SliderContent
                 translate={translate}
                 transition={transition}
                 width={widthScreen * content.length}
-            >
-                {content.map(val => (
-                    <Slide ref={slide} key={val.slide}  content={val.slide} title={val.title} subtitle={val.subtitle} but={val.button}/>
-                ))}
-            </SliderContent>
+                content={content}
+            />
             <Arrow direction="left" handleClick={prevSlide}/>
             <Arrow direction="right" handleClick={nextSlide}/>
             <Dots slides={content} activeIndex={activeIndex}/>
-
         </div>)
 }
 

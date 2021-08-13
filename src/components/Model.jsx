@@ -1,4 +1,4 @@
-export const Car = ({name, price, image}) => {
+export const Model = ({name, price, image}) => {
     return (
         <div className="cars__item">
             <h5>{name}</h5>

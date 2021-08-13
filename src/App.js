@@ -1,43 +1,38 @@
 import React from 'react'
 import {Route, Switch} from 'react-router-dom';
-import {MainPage} from "./pages/MainPage";
-import {Order} from "./pages/Order/Order";
-import {BackgroundMenu} from "./components/BackgroundMenu";
-import {LineMenu} from "./components/LineMenu";
-
+import {MainPage} from './pages/MainPage';
+import {Order} from './pages/Order/Order';
+import {BackgroundMenu} from './components/BackgroundMenu';
+import {LineMenu} from './components/LineMenu';
 
 function App() {
-    const background = React.useRef();
+    const [isMenu, setMenu] = React.useState(false);
 
-    const usingBM = (iconStatus) => {
+    const usingBM = (iconStatus, lineMenu) => {
         if (!iconStatus) {
-            document.getElementsByClassName('line-menu')[0].style.background = '#111518';
-            document.getElementsByClassName('line-menu__language')[0].style.display = 'none';
-            background.current.style.display = 'block';
-            if (document.getElementById('sliderFone'))
-                document.getElementById('sliderFone').classList.add("fone");
+            setMenu(true);
+            if (lineMenu)
+                lineMenu.current.style.background = '#111518';
         } else {
-            background.current.style.display = 'none';
-            document.getElementsByClassName('line-menu')[0].style.background = '#151B1F';
-            document.getElementsByClassName('line-menu__language')[0].style.display = 'block';
-            if (document.getElementById('sliderFone'))
-                document.getElementById('sliderFone').classList.remove("fone");
+            setMenu(false);
+            if (lineMenu)
+                lineMenu.current.style.background = '#151B1F';
         }
     }
 
     return (
         <div>
-            <div ref={background} className="menu-background">
+            {isMenu && <div className="menu-background">
                 <BackgroundMenu/>
-            </div>
+            </div>}
             <div className="main-container">
-                <LineMenu toggleBM={usingBM}/>
+                <LineMenu menu={isMenu} toggleBM={usingBM}/>
                 <Switch>
-                    <Route exact path="/cars/build" render={() => <MainPage pressBM={usingBM}/>}/>
+                    <Route exact path="/cars/build" render={() => <MainPage menu={isMenu} pressBM={usingBM}/>}/>
                     <Route path="/cars/build/order" render={() => <Order pressBM={usingBM}/>}/>
                 </Switch>
             </div>
-        </div>)
+        </div>);
 }
 
 export default App;

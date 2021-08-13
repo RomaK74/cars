@@ -31,8 +31,7 @@
 
 .menu-background {
   position: fixed;
-  z-index: 9998;
-  display: none;
+  z-index: 2600;
   width: 100%;
   height: 100%;
   background: #111518;
@@ -48,7 +47,6 @@
 
     .menu-in__item {
       margin-bottom: 15px;
-      cursor: pointer;
 
       a {
         font-size: 32px;
@@ -68,8 +66,6 @@
 
       .social-networks__item {
         svg {
-          cursor: pointer;
-
           &:hover {
             path {
               fill: #0EC261;
@@ -418,17 +414,14 @@ button {
   }
 
   .slider-part {
+    position: relative;
+    z-index: 9000;
     .fone {
-
       position: fixed;
       width: 100%;
       height: 100%;
-      z-index: 1000;
-      /* Menu background */
-
+      z-index: 9999;
       background: rgba(17, 21, 24, 0.81);
-
-
     }
 
     .slider {
@@ -437,6 +430,70 @@ button {
       max-width: 688px;
       margin: 0 auto;
       overflow: hidden;
+
+      &__content {
+        height: 100%;
+        display: flex;
+
+        .slide {
+          height: 100%;
+          width: 688px;
+          background-size: auto 100%;
+          background-repeat: no-repeat;
+          //background-image: url("/img/slide-1.png") 100% 100% no-repeat;
+          background-repeat: no-repeat;
+          background-position: center;
+          color: white;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+
+          .slide__content {
+            margin-left: 96px;
+
+
+            .slide__title {
+              font-size: 40px;
+              margin-bottom: 15px;
+            }
+
+            .slide__subtitle {
+
+              max-width: 495px;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 300;
+              line-height: 90%;
+            }
+
+            .slide__button {
+              background: linear-gradient(90deg, #13493F 0%, #0C7B1B 100%);
+              border-radius: 4px;
+              margin-top: 32px;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 21px;
+              display: flex;
+              align-items: center;
+              padding: 15px 37px;
+              text-align: center;
+              border: 0;
+              outline: 0;
+              cursor: pointer;
+              color: #EEEEEE;
+
+              &:hover {
+                filter: brightness(90%);
+              }
+
+              &:active {
+                filter: brightness(80%);
+              }
+            }
+          }
+        }
+      }
 
       .slider__dots {
         position: absolute;
@@ -455,70 +512,6 @@ button {
         }
       }
 
-      .slide {
-        height: 100%;
-        width: 688px;
-        background-size: auto 100%;
-        background-repeat: no-repeat;
-        //background-image: url("/img/slide-1.png") 100% 100% no-repeat;
-        background-repeat: no-repeat;
-        background-position: center;
-        color: white;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-
-        .slide__content {
-          margin-left: 96px;
-
-
-          .slide__title {
-            font-size: 40px;
-            margin-bottom: 15px;
-          }
-
-          .slide__subtitle {
-
-            max-width: 495px;
-            font-size: 24px;
-
-
-            font-style: normal;
-            font-weight: 300;
-            line-height: 90%;
-
-
-          }
-
-          .slide__button {
-            background: linear-gradient(90deg, #13493F 0%, #0C7B1B 100%);
-            border-radius: 4px;
-            margin-top: 32px;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 21px;
-            display: flex;
-            align-items: center;
-            padding: 15px 37px;
-            text-align: center;
-            border: 0;
-            outline: 0;
-            cursor: pointer;
-            color: #EEEEEE;
-
-            &:hover {
-              filter: brightness(90%);
-            }
-
-            &:active {
-              filter: brightness(80%);
-            }
-          }
-        }
-      }
-
-
       .arrowLine {
         position: absolute;
         width: 64px;
@@ -528,7 +521,6 @@ button {
         opacity: 0;
         cursor: pointer;
 
-
         &:hover {
           opacity: 0.3;
 
@@ -537,7 +529,6 @@ button {
           }
         }
       }
-
 
       .arrow:hover.arrowLine {
         opacity: 0.3;
@@ -558,12 +549,10 @@ button {
 
         &:hover {
           transform: scale(1.1);
-
         }
 
         &:hover + .arrowLine {
           opacity: 0.3;
-
         }
 
         img {
@@ -581,6 +570,7 @@ button {
 @media screen and (max-width: 1440px) {
   .container {
     margin-left: 104px;
+
     .main-part {
       padding: 32px;
     }
@@ -589,15 +579,16 @@ button {
       .slider {
         max-width: 600px;
 
+        &__content {
+          .slide {
+            width: 600px;
+            height: 100%;
 
-        .slide {
-          width: 600px;
-          height: 100%;
+            .slide__content {
 
-          .slide__content {
-
-            .slide__subtitle {
-              max-width: 400px;
+              .slide__subtitle {
+                max-width: 400px;
+              }
             }
           }
         }
@@ -612,12 +603,14 @@ button {
       .slider {
         max-width: 500px;
 
-        .slide {
-          width: 500px;
+        &__content {
+          .slide {
+            width: 500px;
 
-          .slide__content {
-            .slide__subtitle {
-              max-width: 350px;
+            .slide__content {
+              .slide__subtitle {
+                max-width: 350px;
+              }
             }
           }
         }
@@ -648,25 +641,23 @@ button {
       .slider {
         max-width: 410px;
 
-        .slide {
-          width: 410px;
+        &__content {
+          .slide {
+            width: 410px;
 
-          .slide__content {
-            margin-left: 64px;
+            .slide__content {
+              margin-left: 64px;
 
-            .slide__subtitle {
-              max-width: 282px;
+              .slide__subtitle {
+                max-width: 282px;
+              }
             }
           }
         }
 
-
         .arrowLine {
           width: 32px;
-
         }
-
-
       }
     }
   }
@@ -693,19 +684,20 @@ button {
       .slider {
         max-width: 370px;
 
-        .slide {
-          width: 370px;
+        &__content {
+          .slide {
+            width: 370px;
 
-          .slide__content {
-            margin-left: 41px;
+            .slide__content {
+              margin-left: 41px;
 
-            .slide__subtitle {
-              max-width: 250px;
-              font-size: 22px;
+              .slide__subtitle {
+                max-width: 250px;
+                font-size: 22px;
+              }
             }
           }
         }
-
 
         .arrowLine {
           width: 32px;
@@ -762,9 +754,7 @@ button {
 }
 
 @media screen and (max-width: 545px) {
-
   .menu-background {
-
     .menu-in {
       padding: 90px 0 0 100px;
     }
